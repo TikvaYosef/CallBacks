@@ -66,3 +66,26 @@
 // promiseFumction(4)
 //     .then((res) => { console.log(res) })
 //     .catch((reg) => { console.log(reg) })
+
+
+// function promiseFumction(name) {
+//     return new Promise((resolve, reject) => {
+//         (name.length > 4) ? resolve("long name") : reject("short name");
+//     })
+// }
+// promiseFumction("tikva")
+//     .then((res) => { console.log(res) })
+//     .catch((rej)=>{console.log(rej)})
+
+// arrayOfNames = ["tikva", "yafit", "eden"];
+// function promiseFumction(arrayOfNames, name) {
+
+//     return new Promise((resolve, reject) => {
+//         (arrayOfNames.indexOf(name) != -1) ? resolve("name exist") : reject("no name")
+//     })
+
+// }
+// promiseFumction(arrayOfNames, "tikva")
+//     .then((res) => { console.log(res) })
+//     .catch((rej) => { console.log(rej) })
+
