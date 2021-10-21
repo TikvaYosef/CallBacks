@@ -89,3 +89,47 @@
 //     .then((res) => { console.log(res) })
 //     .catch((rej) => { console.log(rej) })
 
+// =============================================================================================
+
+// שאלות 1-5
+// function promiseFumction7(params) {
+//     return new Promise((resolve, reject) => {
+//         params? resolve("yess"):reject("sorry")
+//     })
+// }
+// promiseFumction7(true)
+//     .then((res) => { console.log(res) })
+//     .catch((rej) => { console.log(rej) })
+
+
+//  1-10שאלות 
+
+
+let random = Math.floor(Math.random() * 9);
+
+// console.log(random)
+
+function promiseFumction6(num) {
+
+
+    return new Promise((resolve, reject) => {
+
+        // (random < 5) ? resolve(random) : reject("you lose try again");
+        (random == num) ? resolve(`${random} , nice work,do it again`) : reject("you lose try again");
+    })
+}
+let counter = 0
+inp1.onchange = () => {
+    promiseFumction6(inp1.value)
+        .then((res) => { div1.innerText = res })
+        .catch((rej) => { div1.innerText = rej })
+        .finally(() => { console.log(counter++) })
+
+}
+
+
+
+// promiseFumction6(inp1.value)
+//     .then((res) => { div1.innerText = res })
+//     .catch((rej) => { div1.innerText = rej })
+
