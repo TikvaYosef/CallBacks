@@ -504,8 +504,502 @@ const movieJason = JSON.stringify({
     ]
 })
 
-let toJason = JSON.parse(movieJason)
-console.log(toJason)
+// let toObject = JSON.parse(movieJason)
+// console.log(toJason)
+// =============================================================
+
+// שאלה 1
 
 
 
+
+// function promiseFunc() {
+
+//     return new Promise((resolve, reject) => {
+//         let toObject = JSON.parse(movieJason)
+//         if (toObject.success ) {
+//             resolve(toObject.success)
+//         } else {
+//             reject({ massege: "array is empty" })
+//         }
+//     })
+// }
+
+// async function asyncfunc() {
+//     try {
+//         return await promiseFunc()
+//     }
+//     catch (err) {
+//         return err
+//     }
+// }
+
+// asyncfunc()
+//     .then((res) => { console.log(res) })
+//     .catch((rej) => { console.log(rej) })
+
+
+
+// שאלה 2
+
+// function myPromise() {
+//     return new Promise((resolve, reject) => {
+//         let toObject = JSON.parse(movieJason)
+//         if (movieJason.length > 0) {
+//             resolve(toObject.data)
+//         } else {
+//             reject({ messege: "array is empty" })
+//         }
+//     })
+
+// }
+
+// async function asyncfunc() {
+//     try {
+//         return await myPromise()
+//     }
+//     catch (err) {
+//         return err
+//     }
+
+// }
+// asyncfunc()
+//     .then((res) => { console.log(res) })
+//     .catch((rej) => { console.log(rej) })
+
+
+
+// שאלה 3
+// function myPromise(movieNameUser) {
+//     return new Promise((resolve, reject) => {
+//         let toObj = JSON.parse(movieJason)
+//         for (const item of toObj.data) {
+//             if (item.movieName == movieNameUser) {
+//                 resolve(item)
+//             }
+
+//         }
+
+
+//         reject({ messege: "movie is not found " })
+//     })
+
+
+// }
+
+// async function asyncfunc() {
+//     try {
+//         return await myPromise("shrek")
+//     }
+//     catch (err) {
+//         return err
+//     }
+
+// }
+// asyncfunc()
+//     .then((res) => { console.log(res) })
+//     .catch((rej) => { console.log(rej) })
+
+
+// שאלה 4
+
+// function myPromise(idFromUser) {
+//     return new Promise((resolve, reject) => {
+//         let toObj = JSON.parse(movieJason)
+//         for (const item of toObj.data) {
+//             if (item._id == idFromUser) {
+//                 resolve(item)
+//             }
+
+//         }
+//         reject({ messege: "movie is not found " })
+//     })
+// }
+
+// async function asyncfunc() {
+//     try {
+//         return await myPromise("60815daa6b305d8dcd07c674")
+//     }
+//     catch (err) {
+//         return err
+//     }
+// }
+
+// asyncfunc()
+//     .then((res) => { console.log(res) })
+//     .catch((rej) => { console.log(rej) })
+
+
+// שאלה 5
+
+// function myPromise(num) {
+//     return new Promise((resolve, reject) => {
+//         let toObj = JSON.parse(movieJason);
+//         let array = []
+//         if (toObj.data.length > 0) {
+//             for (const item of toObj.data) {
+//                 if (item.rating > num) {
+//                     array.push(item)
+//                     resolve(array)
+//                 }
+//             }
+//         }
+//         reject({ messege: "movie is not found " })
+//     })
+// }
+
+// async function asyncfunc() {
+//     try {
+//         return await myPromise(3)
+//     }
+//     catch (err) {
+//         return err
+//     }
+
+// }
+// asyncfunc()
+//     .then((res) => { console.log(res) })
+//     .catch((rej) => { console.log(rej) })
+
+
+// שאלה 6
+// שאלה 7
+// =======================================================
+const Urers = JSON.stringify(
+    [
+        {
+            "_id": "605acace4ab389d8ed54c496",
+            "age": 35,
+            "name": {
+                "last": "Hensley",
+                "first": "Dollie"
+            },
+            "email": "dollie.hensley@undefined.org",
+            "index": 0,
+            "phone": "+1 (904) 421-3160",
+            "picture": "http://placehold.it/32x32"
+        },
+        {
+            "_id": "605acaceed1f0e1cfa1eee67",
+            "age": 21,
+            "name": {
+                "last": "Hunt",
+                "first": "Dolores"
+            },
+            "email": "dolores.hunt@undefined.com",
+            "index": 1,
+            "phone": "+1 (967) 432-2905",
+            "picture": "http://placehold.it/32x32"
+        },
+        {
+            "_id": "605acacefedd0fe77874d78f",
+            "age": 28,
+            "name": {
+                "last": "Pennington",
+                "first": "Milagros"
+            },
+            "email": "milagros.pennington@undefined.net",
+            "index": 2,
+            "phone": "+1 (922) 492-2085",
+            "picture": "http://placehold.it/32x32"
+        },
+        {
+            "_id": "605acace6d3f84fc9b40849f",
+            "age": 32,
+            "name": {
+                "last": "Anderson",
+                "first": "Myrtle"
+            },
+            "email": "myrtle.anderson@undefined.biz",
+            "index": 3,
+            "phone": "+1 (858) 404-3273",
+            "picture": "http://placehold.it/32x32"
+        },
+        {
+            "_id": "605acace06d24518b6419d23",
+            "age": 29,
+            "name": {
+                "last": "York",
+                "first": "Terry"
+            },
+            "email": "terry.york@undefined.co.uk",
+            "index": 4,
+            "phone": "+1 (816) 492-3475",
+            "picture": "http://placehold.it/32x32"
+        },
+        {
+            "_id": "605acace46f0669738455d6b",
+            "age": 38,
+            "name": {
+                "last": "Bridges",
+                "first": "Effie"
+            },
+            "email": "effie.bridges@undefined.info",
+            "index": 5,
+            "phone": "+1 (856) 423-3786",
+            "picture": "http://placehold.it/32x32"
+        },
+        {
+            "_id": "605acace5ab5217354268532",
+            "age": 26,
+            "name": {
+                "last": "Walter",
+                "first": "Krista"
+            },
+            "email": "krista.walter@undefined.me",
+            "index": 6,
+            "phone": "+1 (849) 513-2888",
+            "picture": "http://placehold.it/32x32"
+        },
+        {
+            "_id": "605acaced68677a5dca08a9b",
+            "age": 20,
+            "name": {
+                "last": "Buchanan",
+                "first": "Gomez"
+            },
+            "email": "gomez.buchanan@undefined.biz",
+            "index": 7,
+            "phone": "+1 (888) 494-2462",
+            "picture": "http://placehold.it/32x32"
+        },
+        {
+            "_id": "605acaceb7ece55cb38e546a",
+            "age": 20,
+            "name": {
+                "last": "Potter",
+                "first": "Caitlin"
+            },
+            "email": "caitlin.potter@undefined.io",
+            "index": 8,
+            "phone": "+1 (801) 514-3055",
+            "picture": "http://placehold.it/32x32"
+        },
+        {
+            "_id": "605acace98de45687c4c6279",
+            "age": 26,
+            "name": {
+                "last": "Dillon",
+                "first": "Guzman"
+            },
+            "email": "guzman.dillon@undefined.ca",
+            "index": 9,
+            "phone": "+1 (857) 407-2403",
+            "picture": "http://placehold.it/32x32"
+        }
+    ]
+)
+
+// שאלה 1
+
+// function myPromise1() {
+//     return new Promise((resolve, reject) => {
+//         let toObj = JSON.parse(Urers)
+//         if (toObj) {
+//             resolve(toObj)
+
+//         }
+//         else {
+//             if (toObj < 0) {
+
+//                 reject({ messege: "empty" })
+//             }
+//         }
+//     })
+
+// }
+
+// async function asyncFunc1() {
+//     try {
+//         return await myPromise1()
+//     }
+//     catch (err) {
+//         return err
+//     }
+
+// }
+// asyncFunc1()
+//     .then((res) => { console.log(res) })
+//     .catch((rej) => { console.log(rej) })
+
+
+
+// // שאלה 2
+function urserPrimis2(id) {
+    return new Promise((resolve, reject) => {
+        let toArray = JSON.parse(Urers);
+        for (const item of toArray) {
+            if (item._id == id) {
+                resolve(item);
+            }
+        }
+        reject({ messege: "no user exist" })
+    })
+}
+
+async function asyncfunc2() {
+    try {
+        return await urserPrimis2(inp1.value)
+    }
+    catch (error) {
+        return error
+    }
+
+}
+// asyncfunc2()
+//     .then((res) => { console.log(res) })
+//     .catch((rej) => { console.log(rej) })
+
+
+
+// שאלה 3
+
+function userPromis3(emailUser) {
+    return new Promise((resolve, reject) => {
+        let array = JSON.parse(Urers);
+        for (const item of array) {
+            if (item.email == emailUser) {
+                resolve(item)
+            }
+        }
+        reject({ massege: " user is not found" })
+    })
+}
+
+// async function asyncfunc3() {
+//     try {
+//         return await userPromis3("guzman.dillon@undefined.ca")
+//     }
+//     catch (err) {
+//         return err
+//     }
+
+// }
+// asyncfunc3()
+//     .then((res) => { console.log(res) })
+//     .catch((rej) => { console.log(rej) })
+
+
+// שאלה 4
+
+
+// function myPromise4(num) {
+//     return new Promise((resolve, reject) => {
+//         let toArray = JSON.parse(Urers);
+//         let array = []
+//         for (const item of toArray) {
+//             if (item.age > num) {
+//                 array.push(item)
+//                 resolve(array)
+//             }
+//         }
+//         reject({ massege: " user is not found" })
+//     })
+// }
+// async function asyncfunc4() {
+//     try {
+//         return await myPromise4(inp1.value)
+//     }
+//     catch (err) {
+//         return err
+//     }
+// }
+// asyncfunc4()
+//     .then((res) => { console.log(res) })
+//     .catch((rej) => { console.log(rej) })
+
+
+
+//     // let idPromise = asyncfunc4(inp1.value)
+//     //     .then((user) => { myDiv.innerHTML += JSON.stringify(Urers) })
+//     //     .catch((rej) => { console.log(rej) })
+
+
+
+
+
+
+
+
+
+// שאלה 5
+
+function myPromise5(fName) {
+    return new Promise((resolve, reject) => {
+        let toArry = JSON.parse(Urers);
+        for (const item of toArry) {
+            if (item.name.first == fName) {
+                resolve(item)
+            }
+
+        }
+        reject({ massege: " user is not found" })
+    })
+
+}
+
+// async function asyncfunc5() {
+//     try {
+//         return await myPromise5("Guzman")
+//     }
+//     catch (err) {
+//         return err
+//     }
+
+// }
+// asyncfunc5()
+//     .then((res) => { console.log(res) })
+//     .catch((rej) => { console.log(rej) })
+
+// שאלה 6
+
+function showSucses(argoment) {
+    for (const key in argoment) {
+        firstDiv.innerText += `${key}:${argoment[key]}`;
+
+    }
+}
+function showError(err) {
+    secendDiv.innerText += `${err.messege}`
+}
+
+function loadingPic() {
+    allDivs.innerHTML += `<img id="pic" src="./dog loading.gif" ></img>`
+}
+
+function clearloading() {
+    pic.style.display = "none"
+}
+
+
+debugger
+btn.onclick = () => {
+
+    loadingPic()
+
+
+    setTimeout(() => {
+
+        switch (usersSelect.value) {
+            case "id":
+                asyncfunc2()
+                    .then((res) => { showSucses(res)})
+                    .catch((not) => { showError(not) })
+                    .finally(() => { clearloading() })
+
+                break;
+            // case "Email User":
+            //     userPromis3(inp1.value)
+            //         .then((res) => { showSucses(res) })
+            //         .catch((rej) => { console.log(rej) })
+            //         .finally(() => { clearloading() })
+
+            //     break;
+            // case "First Name":
+            //     myPromise5(inp1.value)
+            //         .then((res) => { showSucses(res) })
+            //         .catch((rej) => { console.log(rej) })
+            //         .finally(() => { clearloading() })
+        }
+    }, 3000);
+}
